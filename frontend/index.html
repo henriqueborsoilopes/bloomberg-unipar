@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Live stock prices with real-time updates">
+    <title>Live Stock Prices Dashboard</title>
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header>
+        <h1 class="main-heading">Live Stock Prices</h1>
+    </header>
+
+    <main>
+        <section class="stock-container" id="stock-container" aria-live="polite" role="alert">
+            <div class="stock-block">
+                <h2>Company A</h2>
+                <p>$142.50</p>
+            </div>
+        </section>
+    </main>
+
+    <script async src="https://cdn.jsdelivr.net/npm/sockjs-client@1.5.1/dist/sockjs.min.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+    <script async src="app.js"></script>
+    
+</body>
+</html>
